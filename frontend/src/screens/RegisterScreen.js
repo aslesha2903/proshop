@@ -67,17 +67,17 @@ const RegisterScreen = ({ location, history }) => {
 					<Form.Label>Password</Form.Label>
 					<Form.Control
 						type="password"
-						placeholder="Enter Password"
+						placeholder="Enter password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
 					></Form.Control>
 				</Form.Group>
 
-				<Form.Group controlId="confirmpassword">
+				<Form.Group controlId="confirmPassword">
 					<Form.Label>Confirm Password</Form.Label>
 					<Form.Control
 						type="password"
-						placeholder="Confirm Password"
+						placeholder="Confirm password"
 						value={confirmPassword}
 						onChange={(e) => setConfirmPassword(e.target.value)}
 					></Form.Control>
@@ -90,7 +90,7 @@ const RegisterScreen = ({ location, history }) => {
 
 			<Row className="py-3">
 				<Col>
-					Have an account?{""}
+					Have an Account?{" "}
 					<Link to={redirect ? `/login?redirect=${redirect}` : "/login"}>
 						Login
 					</Link>

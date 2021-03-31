@@ -1,4 +1,4 @@
-//not connectedto server and we run as separate script so gotta import all modules
+//not connected to server and we run as separate script so gotta import all modules
 
 import mongoose from "mongoose"
 import dotenv from "dotenv"
