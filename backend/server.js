@@ -36,9 +36,8 @@ app.use("/api/upload", uploadRoutes)
 app.get("/api/config/paypal", (req, res) =>
 	res.send(process.env.PAYPAL_CLIENT_ID)
 )
-
-//making uploads folder static so accessible to all
 const __dirname = path.resolve()
+//making uploads folder static so accessible to all
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")))
 
 if (process.env.NODE_ENV === "production") {
